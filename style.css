@@ -1,0 +1,224 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav h2 {
+  color: #ff4f81;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff4f81;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('cakes/grad.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff4f81;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #e43f70;
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 100px 10%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  color: #ff4f81;
+  font-size: 2.7rem;
+}
+
+.section-title p {
+  color: #666;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #ff4f81;
+  margin-bottom: 15px;
+}
+
+.menu-grid,
+.gallery-grid,
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-card,
+.gallery-card,
+.review-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.menu-card:hover,
+.gallery-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card img,
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  direction: ltr;
+}
+
+
+.menu-card-content {
+  padding: 20px;
+}
+
+.menu-card-content h3 {
+  color: #ff4f81;
+  margin-bottom: 10px;
+}
+
+.review-card {
+  padding: 30px;
+}
+
+.review-card h4 {
+  margin-top: 15px;
+  color: #ff4f81;
+}
+
+.contact {
+  background: #ff4f81;
+  color: white;
+  text-align: center;
+  padding: 60px 30px;
+  border-radius: 30px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 15px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
