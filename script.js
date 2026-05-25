@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 
 
 
-// FADE-IN ANIMATION
+
 const fadeElements = document.querySelectorAll(
   "section, .menu-card, .gallery-card, .review-card"
 );
@@ -41,7 +41,7 @@ fadeElements.forEach((el) => {
 
 
 
-// 3D HOVER EFFECT
+
 const cards = document.querySelectorAll(
   ".menu-card, .gallery-card, .review-card"
 );
@@ -77,7 +77,7 @@ cards.forEach((card) => {
 
 
 
-// FLOATING EMOJI CREATOR
+
 const emojis = ["🧁", "🎂", "🍰", "🍩", "🍪"];
 
 function createFloatingEmoji() {
@@ -109,7 +109,6 @@ setInterval(createFloatingEmoji, 900);
 
 
 
-// BUTTON RIPPLE EFFECT
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach((button) => {
@@ -140,7 +139,6 @@ buttons.forEach((button) => {
 
 
 
-// AUTO-TYPING HERO TEXT
 const heroText = document.querySelector(".hero-content p");
 
 const text =
@@ -168,7 +166,7 @@ typeText();
 
 
 
-// NAVBAR GLOW EFFECT ON SCROLL
+
 const navbar = document.querySelector("nav");
 
 window.addEventListener("scroll", () => {
